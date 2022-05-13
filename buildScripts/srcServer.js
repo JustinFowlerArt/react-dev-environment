@@ -3,6 +3,7 @@ import path from "path";
 import open from "open";
 import webpack from "webpack";
 import config from "../webpack.config.dev";
+import wdm from "webpack-dev-middleware"
 
 /* eslint-disable no-console */
 
@@ -10,7 +11,7 @@ const port = 3000;
 const app = express();
 const compiler = webpack(config);
 
-app.use(require("webpack-dev-middleware")(compiler, {
+app.use(wdm(compiler, {
     publicPath: config.output.publicPath
 }));
 
