@@ -1,7 +1,7 @@
 {
-  "name": "javascript-development-environment",
+  "name": "react-development-environment",
   "version": "1.0.0",
-  "description": "JavaScript development environment Pluralsight course by Cory House",
+  "description": "React development environment",
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
     "start": "npm-run-all --parallel open:src lint:watch test:watch start-mockapi",
@@ -32,7 +32,6 @@
     }
   },
   "dependencies": {
-    "@types/faker": "^6.6.9",
     "@types/node": "^17.0.31",
     "@types/react": "^18.0.8",
     "@types/react-dom": "^18.0.3",
@@ -53,7 +52,6 @@
     "@babel/preset-env": "^7.17.10",
     "@babel/preset-react": "^7.16.7",
     "@babel/register": "^7.17.7",
-    "@faker-js/faker": "^7.2.0",
     "autoprefixer": "^10.4.7",
     "babel-jest": "^28.0.3",
     "babel-loader": "^8.2.5",
@@ -68,7 +66,7 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
     "eslint-watch": "^8.0.0",
-    "faker": "^6.6.6",
+    "faker": "^5.5.3",
     "fork-ts-checker-webpack-plugin": "^7.2.11",
     "html-webpack-plugin": "5.5.0",
     "jest": "^28.0.3",
